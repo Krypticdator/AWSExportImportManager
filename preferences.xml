@@ -1,0 +1,1731 @@
+<preferences>
+    <primary_stats system="modified fuzion">
+        <stat name="int">How generally bright you are. As a rule, this is more than sheer intelligence, but also
+            includes cleverness, awareness, perception, and ability to learn.
+        </stat>
+        <stat name="ref">Your response time and coordination, as used in aiming, throwing, juggling. A stage magician,
+            for example, would have a high Reflex Statistic. Most importantly, this is the Statistic that affects your
+            ability to hit things.
+        </stat>
+        <stat name="tech">Your ability to manipulate tools or instruments. This is not the same as reflexes, inasmuch as
+            this covers the knack of using tools. One character might have a high Technique, but might not be able to
+            fence or juggle. On the other hand, another might have high Reflexes, but only a fair level of Technique.
+        </stat>
+        <stat name="dex">Your overall physical competence, as pertains to balancing, leaping, jumping, combat and other
+            athletic activities. A gymnast would have a high Dexterity. Most importantly, this Statistic is used to
+            avoid being hit.
+        </stat>
+        <stat name="pre">Your ability to impress and influence people through your character and charisma; how well you
+            get along with others; how you interact in social situations.
+        </stat>
+        <stat name="str">Your muscle mass and how effective it is for exerting force. The higher your strength, the more
+            you can lift, drag, etc., and the more powerful the blows from your fists and other body parts.
+        </stat>
+        <stat name="con">How healthy you are. How resistant to shock effects, poisons and disease. You can be a really
+            big, tough, strong guy and still get floored by a head cold!
+        </stat>
+        <stat name="move">Your speed of movement; running, leaping, swimming, etc.</stat>
+        <stat name="body">Your size, toughness, and ability to stay alive and conscious due to physical mass, sheer
+            bloody-mindedness, structure or other qualities. How much damage you can take is derived from this
+            characteristic.
+        </stat>
+        <stat name="will">Your determination and ability to face danger, stress or dehumanization. It also represents
+            your courage and tenacity
+        </stat>
+    </primary_stats>
+    <secondary_stats system="modified fuzion">
+        <stat divider="2" first_source="int" multiplier="1" name="luck" second_source="ref"/>
+        <stat divider="1" first_source="will" multiplier="10," name="hum" second_source="none"/>
+        <stat divider="2" first_source="str" multiplier="1" name="rec" second_source="con"/>
+        <stat divider="1" first_source="con" multiplier="2" name="end" second_source="none"/>
+        <stat divider="1" first_source="move" multiplier="2" name="run" second_source="none"/>
+        <stat divider="1" first_source="move" multiplier="3" name="sprint" second_source="none"/>
+        <stat divider="1" first_source="move" multiplier="1" name="swim" second_source="none"/>
+        <stat divider="1" first_source="move" multiplier="1" name="leap" second_source="none"/>
+        <stat divider="1" first_source="body" multiplier="5" name="hits" second_source="none"/>
+        <stat divider="1" first_source="body" multiplier="5" name="stun" second_source="none"/>
+        <stat divider="1" first_source="con" multiplier="2" name="sd" second_source="none"/>
+        <stat divider="1" first_source="will" multiplier="3" name="res" second_source="none"/>
+    </secondary_stats>
+    <skills system="modified fuzion">
+        <skill>
+            <name>Brawling / Hand To Hand</name>
+            <stat>Dex</stat>
+            <category>Fighting</category>
+            <description>The skill of fighting man to man with fist, feet and other parts of the body. Brawling is not a
+                trained skill&#8212; it is learned on the Street by getting into a lot of fights. Unlike Martial Arts,
+                there are no specialized attacks and no damage bonuses based on level of mastery.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Melee</name>
+            <stat>Dex</stat>
+            <category>Fighting</category>
+            <description>The ability to use knives, axes, clubs and other hand to hand weapons in combat. Note: when
+                using non-ranged cyberweapons such as rippers, scratchers, slice n&#8217; dices, cyberbeasts, and
+                battlegloves, you must use this skill.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Fencing</name>
+            <stat>Dex</stat>
+            <category>Fighting</category>
+            <description>The mastery of swords, rapiers and monoblades. A Fencing Skill of +3 allows you to be competent
+                with a blade. A Skill of +5 makes you fairly skilled. A Fencing Skill of +6 might win you the National
+                Fencing Competitions. A Skill of +8 will get you a reputation for being a true swordsman of duelist
+                caliber. People like D&#8217;Artagnan or Miyamoto Musashi have Skills of +10. They are legendary masters
+                of the blade: the mention of whom will cause all but the stupidest young bravo to run for cover
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Archery</name>
+            <stat>Ref</stat>
+            <category>Ranged Weapons</category>
+            <description>The skill required to use bows, crossbows and other arrow-based ranged weapons. See Handgun for
+                details.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Gunnery</name>
+            <stat>Ref</stat>
+            <category>Ranged Weapons</category>
+            <description>The skill of using large vehicle weapons, ship-mounted weapons and artillery. At +2, you can
+                fire the gun. At +5, you can compute ranges, azimuths and indirect fire. At +8, you can drop a shell
+                right on top of a designated target.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Handgun</name>
+            <stat>Ref</stat>
+            <category>Ranged Weapons</category>
+            <description>You must have this skill to effectively use handguns of any type, including cyberwear types. At
+                +2, you can use a handgun effectively on a target range, though combat will still rattle you. At +5, you
+                are as skilled as most military officers or policemen. At +7, you can do the sort of fancy shooting you
+                see on TV, and have begun to get a reputation of being &#8220;good with a gun&#8221;. At +8, you are a
+                recognized gunslinger with a &#8220;rep&#8221;. The very sound of your name makes some people back down
+                in fear. At +10, you are a legendary gunslinger, feared by all except the stupid young punks who keep
+                trying to &#8220;take&#8221; you in innumerable gunfight challenges.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Heavy Weapons</name>
+            <stat>Ref</stat>
+            <category>Ranged Weapons</category>
+            <description>The required skill for using grenade launchers, autocannon, mortars, heavy machine guns,
+                missiles and rocket launchers. A Level +5 skill would be equivalent to a general military &#8220;Heavy
+                Weapons&#8221; training course, giving the user the ability to use any or all of these weapon types.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Rifle</name>
+            <stat>Ref</stat>
+            <category>Ranged Weapons</category>
+            <description>You must have this skill to use rifles/shotguns effectively (see Handguns for limitations and
+                modifiers).
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Submachinegun</name>
+            <stat>Ref</stat>
+            <category>Ranged Weapons</category>
+            <description>You must have this skill to use any type of submachine gun effectively (see Handguns for
+                limitations and modifiers).
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Awarness / Notice</name>
+            <stat>Int</stat>
+            <category>Awarness</category>
+            <description>This is the equivalent of a &#8220;trained observer&#8221; skill, allowing characters to notice
+                or be aware of clues, shadowers and other events. With an Awareness of +2 you will usually spot small
+                pieces of paper with notes on them, doors left ajar, and obvious expressions of lying or dislike. An
+                Awareness of +5 or better allows you to spot fairly well hidden clues, notice small changes in
+                expression, and fairly sophisticated attempts to &#8220;shadow&#8221; you. With an Awareness of +8 or
+                greater, you routinely perform the sorts of deductive reasoning seen in the average TV cop show (&#8220;The
+                murderer was left handed because this knife has a specialized handle&#8221;). Sherlock Holmes has a +10
+                Awareness. Players without this skill may only use their Intelligence Stat.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Hide / Evade</name>
+            <stat>Int</stat>
+            <category>Awarness</category>
+            <description>The skill of losing pursuers, covering tracks and otherwise evading people on your trail. At
+                +3, you can lose most boostergangers on the rampage. At +6, you can ditch cops and private eyes. At +8,
+                you can ditch most Solos.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Lipreading</name>
+            <stat>Int</stat>
+            <category>Awarness</category>
+            <description>This skill enables the character to read someone&#8217;s lips in order to tell what is being
+                said. The character must be able to see his target&#8217;s mouth clearly.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Shadow / Track</name>
+            <stat>Int</stat>
+            <category>Awarness</category>
+            <description>The skill of shadowing and following people. This skill is primarily used in urban or inhabited
+                areas rather than in wilderness (where the skill of Survival incorporates tracking in the wilds).
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Surveillance</name>
+            <stat>Int</stat>
+            <category>Awarness</category>
+            <description>The ability to set up a static observation of a subject without being detected and to notice
+                specific activities that may yield important information.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Driving</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>This skill allows you to pilot all ground vehicles like cars, trucks, tanks and hovercraft.
+                This skill is not useable for piloting aircraft. A skill of +3 is equal to that of a very good
+                non-professional driver. A skill of +6 allows you to drive with the skill of a moderately skilled race
+                driver. An driver with a skill of +8 or greater will be nationally known as a racer, regularly win
+                championship races, and possibly have access to the most advanced ground vehicles available (as long as
+                he makes an endorsement).
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Motorcycle</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The required skill to operate motorcycles, roadbikes and other two and three-wheeled
+                vehicles.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Hvy. Machinery</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The required skill for using construction equipment, cranes and other large equipment. At +5,
+                you are a proficient operator and could hold down a union job at the journeyman level.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Piloting</name>
+            <stat>Ref</stat>
+            <category>not found</category>
+            <description>In general, this is the skill of controlling complex flying vehicles. These are broken into
+                categories: Gyro and Rotorcraft, Fixed Wing Aircraft, Aeroliners and Vectored Thrust Aerodynes (AV-s). A
+                Piloting Skill of +1 allows you to take off and land safely in good weather conditions. A Piloting Skill
+                of +3 or more makes you a trained pilot, able to engage in most combat situations or bad weather. Pilots
+                with a Skill of +6 or greater are veteran pilots, able to handle themselves in almost any situation,
+                including aerobatic maneuvers. Pilots with a Skill of +9 or greater are so good, they have a rep as
+                pilots, and are widely known among the piloting fraternity for having the &#8220;right stuff&#8221;.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pilot (Gyro)</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The ability to pilot all types of rotorwing aircraft, including gyros, copters and Jetfans.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>3</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pilot (Fixed Wing)</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The ability to pilot fixed wing jets and light aircraft. Jetfans may be flown with this skill,
+                but only in the straight ahead (non-hover) mode.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pilot (Dirigible)</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The ability to pilot all lighter than air vehicles, including cargo aeroliners, blimps and
+                powered balloons
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pilot (Vect. Thrust)</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The skill of piloting all types of vectored thrust vehicles, including fancars, hover rafts and
+                AV-4, 6 and 7 vehicles.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>3</diff_modifier>
+        </skill>
+        <skill>
+            <name>Power Armor</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The skill of operating all types of powered armors, robotic suits and&#180;Ride armors.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>3</diff_modifier>
+        </skill>
+        <skill>
+            <name>Subjock</name>
+            <stat>Ref</stat>
+            <category>Control</category>
+            <description>The ability to pilot all types of submersible vehicles including minisubs and larger multicrew
+                vehicles.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>3</diff_modifier>
+        </skill>
+        <skill>
+            <name>Link (mecha)</name>
+            <stat>Will</stat>
+            <category>Control</category>
+            <description>The ability to interface with mecha: to control and operate mechapresence units. Note: Desnai
+                mechajocks use Link instead of Power Armor skills.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Athletics</name>
+            <stat>Dex</stat>
+            <category>Body</category>
+            <description>This skill is required for accurate throwing, climbing, and balancing. It combines the basic
+                elements of any high school level sports program. At +3 and above, you are the equivalent of a real high
+                school &#8220;jock&#8221;. At +5 and above, you can perform in college level competitions. At +8 and
+                above, you are of Olympic or Professional caliber.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Dance</name>
+            <stat>Dex</stat>
+            <category>Body</category>
+            <description>The specific skill needed to become a professional dancer. A trained dancer +4 or greater can
+                successfully dance for payment in small clubs or dance troupes. Dancers +6 or greater will be considered
+                to be of professional caliber, and regularly give performances and have fans. Dancers +9 or greater are
+                of &#8220;star&#8221; caliber, have a large number of fans, and may be recognized on the street.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Dodge &amp; Escape</name>
+            <stat>Dex</stat>
+            <category>Body</category>
+            <description>This skill is required to dodge attacks and escape grapples and holds. If an attack is made
+                without your knowledge, you may not apply this skill to your Defense roll.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Endurance</name>
+            <stat>Con</stat>
+            <category>Body</category>
+            <description>This is the ability to withstand pain or hardship, particularly over long periods of time, by
+                knowing the best ways to conserve strength and energy. Endurance Skill checks would be made whenever a
+                character must continue to be active after a long period without food, sleep or water.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Resistance</name>
+            <stat>Will</stat>
+            <category>Body</category>
+            <description>Characters with this skill are especially toughened against interrogation, torture and mind
+                control drugs. A successful use of this skill will automatically increase the difficulty of any
+                interrogation attempt made by another party by one level. This skill may also be used in opposition to a
+                Persuasion attempt.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Stealth</name>
+            <stat>Dex</stat>
+            <category>Body</category>
+            <description>The skill of hiding in shadows, moving silently, evading guards, etc. A Stealth Skill of +1 is
+                about the level of a very sneaky 10 year old stealing cookies. At +3, you are able to get past most
+                guards, or your parents if you&#8217;ve been grounded. At +6, you are good enough to slip smoothly from
+                shadow to shadow and not make any noise. At +8, you are the equal of most Ninja warriors. At +10, you
+                move as silently as a shadow, making the Ninja sound like elephants.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Strength Feat</name>
+            <stat>not found</stat>
+            <category>Body</category>
+            <description>The user of this skill has practiced the art of bending bars, crushing objects, ripping phone
+                books apart and other useful parlor tricks. At +2 you can crush cans, rip thin books in half, and bend
+                thin rods. At +8, no phonebook is safe, you can bend thin rebar, and snap handcuffs. At +10, you can
+                bend prison bars, rip up the Gutenberg Bible, and dent car fenders with one blow.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Swimming</name>
+            <stat>Dex</stat>
+            <category>Body</category>
+            <description>This skill is required to know how to swim (see Athletics for details).</description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Animal Handling</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>This is the ability to train or direct animals through voice commands or hand signals: to train
+                animals to perform tricks or tasks. At +2, you can get Fluffy to roll over. At +5, you can get Fluffy to
+                lead you to the well where little Timmy has fallen in. At +9, Fluffy not only can bring you a beer, but
+                (if he has hands) open the can and put it in a clean glass.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Bribery</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>A character with this skill knows when and where to bribe someone: how to approach them, and
+                how much to offer. At +2, you can cut in line at the movies. At +5, you can get into exclusive clubs or
+                fix a speeding ticket. At +8, you own members of Congress.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Interrogation</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of drawing information from a subject and forcing his secrets into the open. An
+                Interrogation of +2 or better will allow you to infallibly find out if your boyfriend is lying to you.
+                At +5, you are a professional level interrogator&#8212; equivalent to a skilled detective grilling a
+                suspect. Mike Wallace of 60 Minutes has an Interrogation of +9, allowing him to make even the most
+                powerful people squirm.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Intimidate</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of getting people to do what you want by force of personality or physical coercion.
+                At +3, you can frighten almost any typical citizen, politician or low-level thug. At +6, you can
+                intimidate Sylvester Stallone or any moderate &#8220;tough guy&#8221;. At +9, you could intimidate Gov.
+                Schwartzenegger.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Oratory</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of public speaking. At +2, you can wing high school speeches. At +6, you can be paid
+                to speak in public. At +10, you are capable of delivering a speech to rival Kennedy&#8217;s &#8220;Ich
+                Bin Ein Berliner&#8221; or Lincoln&#8217;s Gettysburg Address.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Streetwise</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The knowledge of the &#8220;seamy&#8221; side of life&#8212;where to get illegal and contraband
+                things, how to talk to the criminal element, and avoiding bad situations in bad neighborhoods. With a
+                Streetwise of +2 or better, you can get &#8220;hot&#8221; items, score drugs, etc. A Streetwise of +5
+                would allow you to arrange a murder contract, know a few mobsters who might owe you favors, and be able
+                to call on muscle when you need it. At +8 or better, you could become a major crimelord yourself and
+                skip the middlemen.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Human Perception</name>
+            <stat>Int</stat>
+            <category>Awarness</category>
+            <description>The skill of detecting lies, evasions, moods and other emotional clues from others. At +2, you
+                can usually tell when you&#8217;re not getting the whole truth. At +6, you can detect subtle evasions
+                and mood swings. At +8, you can not only detect subtle emotional clues, but can usually tell what the
+                subject is hiding in a general way.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Interview</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of eliciting interesting anecdotes from an interview subject. This information will
+                be of a more non-specific and personal nature rather than specific knowledge (distinguishing this skill
+                from the skill of Interrogation, where the user is trying to extract exact information. Example: Barbara
+                Walters interviews, Mike Wallace interrogates). At +3 or better, the subject will usually tell you only
+                information relating to what he/she is well known for. At +6 or better, the subject will tell you
+                anecdotes about the past, pontificate about favorite interests and philosophies, etc. At +9 or better,
+                he/she tells you everything&#8212; including personal information about their illegitimate son, the time
+                they stole a cookie at age 4, and the fact that no one ever loved them.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Leadership</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of leading and convincing people to follow you. A leader with a skill of +2 can
+                manage a small office successfully and be respected for it. A leader with a skill of +4 or better can
+                lead a small band of troops into battle and not get backshot. A leader with a skill of +7 or better can
+                lead the entire Gamelon Empire into battle and look good doing it. James Kirk of Star Trek has a
+                Leadership of +11, but you never will.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Seduction</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of forming and maintaining romantic relationships (this includes your abilities as a
+                lover). This skill may be used to determine whether or not players can form relationships with other
+                non-player characters and the intensity of these relationships. In certain cases, Referees may want to
+                average this skill with a player&#8217;s Attractiveness to get a more realistic outcome.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Social Etiquette</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The ability to deal with social situations, like knowing the right fork to use or when not to
+                tell the joke about the farmer&#8217;s daughter and the travelling cyberware salesman. A Social Skill of
+                +2 or better will allow you to get by at any fine restaurant or social function. At +5, you can lunch
+                with the President with aplomb. No social situation will faze you, no matter what. At +8 or above, you
+                can lecture Emily Post on what&#8217;s proper.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Personal Grooming</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>This is the skill of knowing proper grooming, hair styling, etc., to maximize your physical
+                attractiveness. Use of this skill allows players to increase their Attractiveness, and thus their
+                chances of successful Relationships or Persuasions. A basically good looking person would be at +2. A
+                fashion model might have a Personal Grooming of +5 or +6. At +8 or better, you could be a major fashion
+                model, film star, or trendsetter. You are always &#8220;together&#8221;. And you know it.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Persuasion &amp; Fast Talk</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The ability to talk others into doing what you want. This may be used individually or on large
+                groups. At +3, you can win most debates or convince your girlfriend that the blonde you were with was
+                your sister. At +5, you are a smooth talker of professional caliber. Ronald Reagan has a Persuasion of
+                +7. Hitler had a Persuasion of +9.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Wardrobe &amp; Style</name>
+            <stat>Pre</stat>
+            <category>Interaction</category>
+            <description>The skill of knowing the right clothes to wear, when to wear them, and how to look cool even in
+                a spacesuit. With a Wardrobe of +2 or better, you are good at choosing clothes off the rack. At +6, your
+                friends ask you for wardrobe tips, and you never buy anything off the rack. At +8 or better, you are one
+                of those rare people whose personal style influences major fashion trends.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Aero Tech</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for repairing fixed wing aircraft, including Jetfans, jets, and light
+                aircraft. With a Skill of +3, you can perform most routine maintenance tasks. With a Skill of +6, you
+                can do engine teardowns and major structural repairs. With a Skill of +9 or better, you are capable of
+                designing and building your own aircaft.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>AV Tech</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for repairing all ducted fan aerodyne vehicles. At +3, you can perform
+                routine maintenance. At +6, you can tear down engines and modify an AV. At +10, you can design your own
+                AVs on common airframes.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>3</diff_modifier>
+        </skill>
+        <skill>
+            <name>Basic Tech</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skills for building or repairing simple mechanical and electrical devices, such as
+                car engines, television sets, etc. With a Basic Tech Skill of +3 or better, you can fix minor car
+                problems, repair basic wiring, etc. A Basic Tech Skill of +6 or better can repair stereos and TVs,
+                rebuild an engine, etc. A Basic Tech Skill of +9 or better can build a simple computer from scratch, put
+                together a race car engine, and maintain any kind of industrial machinery. However, they do not know
+                enough specialized knowledge to apply it to complex things such as aircraft (just like Mr. Goodwrench
+                doesn&#8217;t know how to build and service an F-16).
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Cryotank Operation</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for operating, repairing and maintaining life suspension and body chilling
+                devices. A minimum skill of +4 is required to chill down a healthy person. A minimum skill of +6 for
+                chilling a wounded person.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>CyberTech</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for repairing and maintaining cyberwear. At level +2, you can keep your
+                cyberwear tuned up and can replace its power batteries. At level +6, you can strip down most cyberwear
+                and even make simple modifications. At level +8, you can strip down and rebuild any cyberware.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Demolitions</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>This skill allows the character to be knowledgeable in using explosives, as well as knowing the
+                best types to use for which jobs, how to set timers and detonators, and how much explosive to use to
+                accomplish a desired result.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Disguise</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of disguising your character to resemble someone else, whether real or fictitious.
+                This skill incorporates elements of both makeup and acting, although it is not the same as the ability
+                to actually be an actor.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Electronics</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for maintaining, repairing and modifying electronic instruments such as
+                computers, personal electronics hardware, electronic security systems, cameras and monitors.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Elect. Security</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of installing or countering electronic eyes, electronic locks, bugs and tracers,
+                security cameras, pressure plates, etc. At level +3, you can jimmy or install most apartment locks and
+                security cams. At +6, you can override most corporate office locks and traps. At +9, you can enter most
+                high security areas with impunity.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>First Aid</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>This skill allows user to bind wounds, stop bleeding, and stabilize a patient</description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Forgery</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of copying and creating false documents and identifications. This skill may also be
+                applied to the detection of same: if you can fake it, you can usually tell a fake as well.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Gyro Tech</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of repairing and maintaining rotorwing aircraft such as helicopters and
+                gyrocopters.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>3</diff_modifier>
+        </skill>
+        <skill>
+            <name>Jury Rig</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>This general repair skill allows the user to temporarily repair or alter anything for 1D6 turns
+                per level of skill. This is not a permanent repair: after the elapsed time, the jury rig will break
+                down.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Mecha Tech</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of maintaining and repairing mecha, including Power Armors and Ride armors. At +1,
+                you can change the fluids. At +5 you can change most standard parts equivalent to changing a spark plug.
+                At +8 you can repair or change major operating systems equivalent to pulling a transmission .
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Medical Tech</name>
+            <stat>Tech</stat>
+            <category>not found</category>
+            <description>This is the skill used to perform major surgery and medical repairs.</description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Paint or Draw</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of producing professional drawings. A Skill of +3 allows you to produce salable
+                &#8220;modern&#8221; art. A Skill of +6 will produce artwork that is recognizable and extremely pleasant
+                to the eye&#8212;as well as salable. An artist with a Skill of +8 or greater will be nationally known,
+                have exhibits in galleries, and have other lesser artists studying his style in art school.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Photo &amp; Film</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of producing professional-caliber photographs or motion pictures. A Skill of +2
+                allows you to make decent home movies. A Skill of +4 creates work capable of winning amateur contests. A
+                Skill of +6 will produce work of the level of the average Playboy cover or rock video. A photographer or
+                cinematographer with a Skill of +8 or better will be nationally known and probably famous.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pharmaceuticals</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill of designing and manufacturing drugs and medicines. A minimum Chemistry skill of +4
+                is required. At +4, you can make aspirin. At +6, you can make hallucinogenics or antibiotics. At level
+                +9 you can build designer drugs tailored to individual body chemistries.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pick Lock</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The skill required to pick locks and break into sealed containers and rooms. At +3, you can
+                jimmy most simple locks. At +6 you can crack most safes. At +9 or better, you have a rep as a master
+                cracksman, and are known to all the major players in the Cyberpunk world.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Pick Pocket</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for picking pockets without being noticed, as well as &#8220;shoplifting&#8221;
+                small items. For ideas on levels of ability, see Pick Lock, above.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Weaponsmith</name>
+            <stat>Tech</stat>
+            <category>Technique</category>
+            <description>The required skill for repairing and maintaining weapons of all types. At level +2, you can do
+                repairs and field stripping. At level +6, you can repair all types of weapons and make simple
+                modifications. At level +8, you can design your own weapons to order.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>2</diff_modifier>
+        </skill>
+        <skill>
+            <name>Inferface</name>
+            <stat>Int</stat>
+            <category>not found</category>
+            <description>not found</description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Perform</name>
+            <stat>Int</stat>
+            <category>Performance</category>
+            <description>The skill of trained acting, singing, etc. A trained performer of +4 or greater can
+                successfully sing for payment at weddings or small clubs. Performers +6 or greater will be considered to
+                be of professional caliber, and may have lucrative contracts and fans. Performers of +9 or greater are
+                of &#8220;star&#8221; caliber, have a large number of fans, and may be recognized on the street.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Play Instrument</name>
+            <stat>Int</stat>
+            <category>Performance</category>
+            <description>The skill of knowing how to play a musical instrument. You must take this skill separately for
+                each type of instrument played. A Skill of +4 or higher will qualify your character to play professional
+                &#8220;gigs&#8221;. A Skill of +8 and above will gain the musician some professional acclaim, possibly
+                with recording contracts and command performances. At +10, you are widely acclaimed, have lots of
+                Grammys, and regularly jam with a major musical act.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Ventriloquist</name>
+            <stat>Int</stat>
+            <category>Performance</category>
+            <description>The skill of making your voice sound as if it is coming from another nearby location. At +5,
+                they&#8217;ll never see your lips move.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Accounting</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The ability to balance books (or create false books), juggle numbers, create budgets and handle
+                day to day business operations.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Anthropology</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The knowledge of human cultures, habits and customs. Unlike Streetwise (which covers only the
+                cultures and customs of the Street), or Social (which covers only what you should do in a given
+                situation), Anthropology covers general customs and background of a culture. For example, with
+                Streetwise, you know what alleys to avoid and what gangs are dangerous. With Social, you know the proper
+                forms of address for a high ranking Japanese zaibatsu head. With Anthropology, you know that the customs
+                of a N&#8217;Tanga tribesman require that a young man kill a lion in order to be accepted as an adult
+                male.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Biology</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>General knowledge of animals, plants, and other biological systems. At level +3, you know most
+                types of common animals, plants. At +6, you have a general understanding of genetics, cellular biology,
+                etc. At +10, you can perform most bio-lab procedures, including gene mapping and splicing.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Botany</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The general knowledge of plants and plant identification. At level +3, you know most common
+                plants and can identify which ones are dangerous and why. At a +6, you can identify most important
+                plants found worldwide and have a working knowledge of their uses. At +8, you have the equivalent of a
+                doctorate in Botany and know all about rare poisons, exotic orchids and other useful plants.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Chemistry</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The required skill for mixing chemicals and creating various compounds. A level +2 Chemistry is
+                equal to high school chemistry. A level +4 is equal to a trained pharmacist or college level chemist. A
+                +8 is a trained laboratory chemist.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Coding</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The required skill to write programs and to re-program computer systems. This skill does not
+                allow players to actually do repairs on a computer (this requires Electronics). With a Coding Skill of
+                +1, you can write simple programs. A Skill of +3 means you know higher level languages and can write
+                complex programs (including video games and mindcore programs). With a Skill +6 or better you&#8217;re
+                considered a professional who can build all kinds of software. With a Skill of +9 or better, other
+                coders speak your name with reverence (&#8220;You invented Q? Wow!&#8221;), young hackers set out to
+                crack your systems, and any software you design instantly gets used in every business app or hack in the
+                world.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Composition</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The required skill for writing songs, articles, or stories. A Composing Skill of +4 or greater
+                gives your character the ability to produce salable work. A Skill of +8 or more produces work of such a
+                high caliber that the creator may have a strong literary following and not a little critical acclaim.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Diagnose Illness</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The skill of clinically diagnosing symptoms and medical problems. A +3 is the equivalent of a
+                high school nurse&#8212;you can recognize most common injuries and complaints. At +6, you would be
+                equivalent to a trained intern: you can recognize many uncommon illnesses and know how to treat most
+                common ones. A +9 is the equivalent of a skilled diagnostician: other physicians come to you to get a
+                diagnosis.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Education &amp; Gen Know</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>This skill is the equivalent of a basic public school education, allowing you to know how to
+                read, write, use basic math, and know enough history to get by. In effect, it is a &#8220;lore&#8221; or
+                trivia skill. A level of +1 is a basic grade school education. A skill of +2 is equal to a high school
+                equivalency. A Knowledge Skill of +3 is equal to a college education, +4 or higher is equal to a Masters
+                or Doctorate. At +7, you are an extremely well-educated person, and are asked to play Trivial Pursuit a
+                lot. At +9 and above, you are one of those people who knows a lot about every thing (and hopefully has
+                the good sense to keep his mouth shut).
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Expert</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>You may use this skill to be an expert on one specific subject, such as rare postage stamps,
+                obscure weapons, a foreign language, etc. At +3, you are the local expert. At +6, you know enough to
+                publish a few books on the subject. At +8 or better, your books are recognized as major texts on the
+                subject, and you could do the talk-show circuit if you wanted to.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Gamble</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The skill of knowing how to make bets, figure odds, and play games of chance successfully. As
+                any professional gambler knows, this is not a luck skill. At +2, you are the local card shark at the
+                Saturday night poker game. At +6, you can make a living at the tables in Vegas and Monte Carlo. At +9 or
+                better, you can take on James Bond at roulette and stand a good chance of breaking the bank.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Geology</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>A functional knowledge of rocks, minerals and geologic structures. At +3, you can identify most
+                common rocks and minerals. At +6, you have the equivalent of a college degree in Geology and can
+                identify minerals and geological structures with ease. At +8, you can teach geology in high school.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>History</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The knowledge of facts and figures of past events. In game play, this might be used to
+                determine if a character is familiar with a particular clue related to a past event. At +2, you have the
+                equivalent of a grade school history education. At +6, you would have the equivalent of a college grasp
+                on the subject. At +8, you could teach history in high school. At +9, you may have written a few of the
+                most oft-used texts on a particular historical personage or epoch.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Language</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The knowledge of a foreign tongue. At +2, you can &#8220;get by&#8221; with speaking the
+                language. At +3, you can actually read a written form of it. At +6 and above, you are fairly fluent,
+                although no native will be fooled by your ability. At +8 and above, you speak and read the language like
+                a native. Each language known requires a separate Know Language Skill, however, one may use the
+                knowledge of a particular Language with up to 1/2 (round down) proficiency with any language in the same
+                linguistic family. Example: knowing Cantonese at +4 will give you the ability to understand and speak
+                Mandarin at +2.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Library Search</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The skill of using databases, the DataPool, libraries and other compiled information sources to
+                find facts. With a skill of +2 you can use most simple databases. With a skill of +6, you can easily
+                access the Library Congress. At +9, you can comprehend almost any public database and find very obscure
+                facts.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Mathematics</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The skill of understanding calculations and mathematical formulas. At +3, you have the ability
+                to add, subtract, divide and multiply. At +4, you can do algebra and geometry. At +6, you can perform
+                calculus. At +9 you can deduce your own mathematical formulas
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Market Trading</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The ability to speculate in tradegoods and commodities, to play stock markets, to engage in
+                goods transactions and manipulate investments profitably. At +2, you know enough to invest in junk bonds
+                and lose your shirt. At +6, your investments pay off 75% of the time. At +9, you are a major speculator,
+                who routinely dabbles in international trade and can write learned articles on the subject of investment
+                and speculation.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Physics</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The ability to calculate physical principles, such as gas pressures, mechanical energies, etc.
+                This skill requires a basic Mathematics Skill of +4.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Teaching</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The skill of imparting knowledge to someone else (if you don&#8217;t think this is a skill, you
+                ought to try it sometime). Players may not teach any skill unless they have a higher skill level than
+                the student. The referee is the final arbiter of how long it takes to teach a skill. At a Teaching Skill
+                of +3 or better, you can professionally teach students up to High School. At +6, you know enough to be a
+                college professor (if you wanted). At +9 or greater, you are recognized by others in the field as good
+                enough to guest lecture at MIT or CalTech: your texts on the subject are quoted as the major references,
+                and you might have a TV show on the&#180;equivalent of the Discovey Channel.
+            </description>
+            <chippable>no</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Wilderness Survival</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>The required skill for knowing how to survive in the wilds. Knowledge includes how to set
+                traps, forage for wood, track game, build shelters, make fires. The average Boy Scout has a Survival of
+                +3. A Special Forces Green Beret has a Survival of +6 or above. Grizzly Adams, Mountain Man of the
+                Wilderness, would have a +9 or +10 Survival Skill.
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+        <skill>
+            <name>Zoology</name>
+            <stat>Int</stat>
+            <category>Education</category>
+            <description>Knowledge of lifeforms, biological processes and their relation to the environment. At +2, you
+                know most common animals. At +5, you know not only well known animals, but also about many exotics and
+                endangered species. At +8, you are knowledgeable on almost all animals, know their habits well, and have
+                a +1 advantage to any Wilderness Survival Skills (you know where to find the game).
+            </description>
+            <chippable>yes</chippable>
+            <diff_modifier>1</diff_modifier>
+        </skill>
+    </skills>
+    <complications system="modified fuzion">
+        <complication>
+            <name>Absend Minded</name>
+            <category>Psychological Complications</category>
+            <description>You have strange lapses of memory. You often: Forget generally known facts (5). Forget friends,
+                family (10). Forget your own identity (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Bipolar</name>
+            <category>Psychological Complications</category>
+            <description>You are a classic manic/depressive, prone to fits of erratic, up moods punctuated with severe
+                terrifying depressions. You are often: Moody (5). Liable to lie around and mope (10). Liable to run
+                around frenetically risking life and limb or sink into a miserable stupor (15). Suicidal (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Delusions</name>
+            <category>Psychological Complications</category>
+            <description>You believe things that are not real. You may hear voices, think aliens are after you, or that
+                you are God. You will: Risk ostracism, embarrassment (5). Risk hospitalization, bodily harm or
+                financial/social ruin (10). Risk life &amp; limb (15) .
+            </description>
+        </complication>
+        <complication>
+            <name>Masochist</name>
+            <category>Psychological Complications</category>
+            <description>You hate yourself, and will go out of your way to injure yourself. To do this, you may: Seek
+                verbal abuse (5). Seek minor physical abuse (10), Seek major physical abuse (15). Seek life threatening
+                abuse (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Paranoia</name>
+            <category>Psychological Complications</category>
+            <description>(just because you think they&#8217;re after you...). You think you have enemies, everywhere.
+                Sometimes you are focussed on one foe, other times, there may be legions. You react to your paranoia by:
+                Incoherently ranting (5). Compulsively working on defenses against Them (10). Risking incarceration,
+                bodily harm, social or financial ruin to stop Them (15). Risking life &amp; limb (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Phobia</name>
+            <category>Psychological Complications</category>
+            <description>You have a phobia: and unreasoning fear of some common thing, such as dogs, heights, sounds or
+                color. When faced with your phobia, you feel: Discomfort (5). Paralyzing Fear (10). Berserk Terror (15).
+                Catatonic (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Split Personality</name>
+            <category>Psychological Complications</category>
+            <description>You&#8217;re two, two, TWO people in one! [GM controls this personality, has character sheet
+                for it, etc.]. Your other self: Likes you (5). Is neutral to you (10). Hostile to you (15). Dangerous to
+                you in actions (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Airhead</name>
+            <category>Personality Traits</category>
+            <description>Oh Wow! You&#8217;re just naturally spacy. In general, you: Misplace minor, trivial things (5).
+                Misplace or forget to do important things (10). Misplace or forget to deal with dangerous things (15).
+                Dangerously oblivious to everything: the GM never asks you to make a perception roll unless you request
+                it (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Bad Tempered</name>
+            <category>Personality Traits</category>
+            <description>You&#8217;re just irritable, all the time. When your temper flares: You&#8217;ll risk
+                embarrassment, or financial loss (5). You&#8217;ll risk incarceration, bodily harm or financial/social
+                ruin (10). You&#8217;ll risk life &amp; limb (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Coward</name>
+            <category>Personality Traits</category>
+            <description>You lack nerve, especially in combat. When faced with danger: You tremble at anything you
+                imagine as danger (5). You freeze up and can&#8217;t react (10). You try to run as far away as possible
+                (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Obsessed</name>
+            <category>Personality Traits</category>
+            <description>You just can&#8217;t get that special (to you) person or thing out of your mind. You: Talk
+                about it all the time and will risk embarrassment, or financial loss over it (5). You&#8217;ll risk
+                incarceration, bodily harm or financial/social ruin over it (10). You&#8217;ll risk life &amp; limb over
+                it (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Shy</name>
+            <category>Personality Traits</category>
+            <description>You hate dealing with others. You: Refuse to speak to new people (5). Avoid all interactions
+                with new people (10). Will physically remove self from situations involving new people (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Stubborn</name>
+            <category>Personality Traits</category>
+            <description>You just hate to give in&#8212;to anyone. To prove you&#8217;re right: You&#8217;ll risk
+                embarrassment, or financial loss (5). You&#8217;ll risk incarceration, bodily harm or financial/social
+                ruin (10). You&#8217;ll risk life &amp; limb (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Berserker</name>
+            <category>Personality Traits</category>
+            <description>You can&#8217;t control your fighting rage&#8212; you rabidly: Attack whatever set you off (5).
+                Attack anyone within range except friends (10). Attack anyone in range (15). Attack anyone in range and
+                won&#8217;t stop until subdued forcibly or exhausted/stunned (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Unlucky</name>
+            <category>Personality Traits</category>
+            <description>Things never go your way: you have constant disasters. Travel and adventure only hold for you:
+                Inconvenient misfortunes (5). Costly or dangerous misfortunes (10). Very costly or dangerous misfortunes
+                (15). Deadly, life threatening dangers (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Missing limb</name>
+            <category>Physiological Limitations</category>
+            <description>Ouch! That hurt! You&#8217;re missing: 1 or more fingers (5). A hand (10 each). An arm (15
+                each).
+            </description>
+        </complication>
+        <complication>
+            <name>Reduced Hearing</name>
+            <category>Physiological Limitations</category>
+            <description>You are hard of hearing. Generally, to make a hearing based Perception check, you will need: To
+                beat a Target Number 4 points higher than everyone else's (5). A Hearing aid just to hear at all (10).
+                New ears: you&#8217;re totally deaf (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Reduced Mobility</name>
+            <category>Physiological Limitations</category>
+            <description>You are unable to get around normally. Your Movement: Is reduced by quarter (5). Is reduced by
+                half (10). Is reduced to dragging by arms at a MOVE of 1 (15). Nonexistent: you&#8217;re a total
+                quadriplegic: unable to move below the neck (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Reduced Sight</name>
+            <category>Physiological Limitations</category>
+            <description>Your eyesight is impaired in some way. You are: Color blind (5). Need glasses (10). Are nearly
+                blind or one-eyed (15). Are totally blind (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Uncontrollable Change</name>
+            <category>Physiological Limitations</category>
+            <description>You are prone to uncontrollable changes: these may be physical or mental (depending on what you
+                negotiate with the GM). What sets off the change is: Uncommon (5). Common (10). Very Common (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Vocal Impairment</name>
+            <category>Physiological Limitations</category>
+            <description>Your voice is somehow damaged. When you speak, you can: Only whisper, stammer or stutter (5).
+                Only make sounds, but cannot speak (10). Cannot make a sound (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Vulnerability</name>
+            <category>Physiological Limitations</category>
+            <description>You&#8217;re susceptible to a certain situation or substance and take extra damage when exposed
+                to it (such as you drown faster than other people.) The substance or situation is: Uncommon (5). Common
+                (10). Very Common (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Susceptibility</name>
+            <category>Physiological Limitations</category>
+            <description>You are harmed or take damage from a certain situation or substance that is harmless to other
+                people (like water. dus, or that glowing green alien rock over there) The substance or situation is:
+                Uncommon (5). Common (10). Very Common (15)
+            </description>
+        </complication>
+        <complication>
+            <name>Public Figure</name>
+            <category>Social Complications</category>
+            <description>You are a figure in the media limelight: you can&#8217;t make a move without getting attention:
+                You are newsworthy and your activities rate an article if a reporter is nearby (5). You frequently make
+                headlines and people always notice your actions on the street (10). Your every action makes news and you
+                have reporters following you everywhere (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Bad Rep</name>
+            <category>Social Complications</category>
+            <description>People &#8220;know&#8221; about you. At least, everyone&#8217;s heard a story or two, even if
+                untrue. When you are mentioned or seen, you are: Frequently recognized (5). Always recognized (10).
+            </description>
+        </complication>
+        <complication>
+            <name>Secret Identity</name>
+            <category>Social Complications</category>
+            <description>You are trying to hide your activities under a secret identity or other smoke screen. You
+                currently are: Living a normal life, unnoticed by anyone (5). Are bothered by a single person trying to
+                uncover your real identity (10). Everyone&#8217;s trying to uncover your real identity (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Poverty</name>
+            <category>Social Complications</category>
+            <description>Money is hard to come by for you, harder than for most. You are, financially-wise: Poor, with
+                just enough for a bed and a few meager meals (5). Dead Broke and probably on the street with barely
+                enough to eat (10). In debt, with others actively seeking to collect what little you have (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Personal Habits</name>
+            <category>Social Complications</category>
+            <description>People just can&#8217;t stand you. Maybe it&#8217;s the bad breath or the nose picking, but
+                they find you: Annoying (5). Disgusting (10). Horrible (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Oppressed</name>
+            <category>Social Complications</category>
+            <description>You are part of an oppressed or otherwise downtrodden group. In your society, you are: Snubbed:
+                others ignore or refuse to deal with you (5). Oppressed: there are laws controlling where you live, work
+                or can travel (10). Outcast: you&#8217;re a total non-person (15). Enslaved: you&#8217;re treated as
+                property and can be sold or mistreated at will (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Distinctive</name>
+            <category>Social Complications</category>
+            <description>You stand out and are noticed in any crowd, with features that are: Easily concealed (5).
+                Concealable with Disguise or Performance skills (10). Not concealable (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Outsider</name>
+            <category>Social Complications</category>
+            <description>You&#8217;re not a local, and stand out like a sore thumb, attracting attention both unwelcome
+                and possibly dangerous. You are obviously: From distant place (5). From very distant place (10). Never
+                before seen in these parts (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Code of Honor</name>
+            <category>Responsibilities</category>
+            <description>These are the personal rules you will not break, no matter what. A Code of Honor might be a
+                code against killing, never attacking from behind, or never suffering an insult without an answer in
+                blood. To keep your Code, you will: Risk expulsion or embarrassment (5). Risk bodily harm or financial
+                ruin (10). Risk life &amp; limb (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Sense of Duty</name>
+            <category>Responsibilities</category>
+            <description>You always do the Right Thing, and follow a higher Moral Code towards those you feel
+                responsible for. You will do this: For your friends (5). For a special group/organization (10). For all
+                Humanity (15). For all Life Itself (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Vow</name>
+            <category>Responsibilities</category>
+            <description>This is a promise you must keep, no matter what. It could be to protect someone, follow an
+                ideal, or just get that stupid Ring into that distant volcano. To fulfill this promise, you&#8217;ll:
+                Risk Expulsion or embarrassment (5). Risk bodily harm or financial ruin (10). Risk life &amp; limb (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Dependents</name>
+            <category>Responsibilities</category>
+            <description>These are those who need your protection and help. They could include children, family, or
+                friends. Generally, they are: Equal to you in abilities (5). Challenged, or otherwise weaker than you
+                (10). Have special problems, requirements or dangers associated with them (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Addiction</name>
+            <category>Compulsive Behaviors</category>
+            <description>(aka Dependence). You must have a particular substance or situation or you will suffer severe
+                mental or physical duress. The substance/situation you need is: Common (5). Uncommon (10). Rare (15).
+                Very Rare (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Honesty</name>
+            <category>Compulsive Behaviors</category>
+            <description>You always tell the truth, even if it hurts. To be honest, you&#8217;ll even: Risk expulsion,
+                embarrassment, or financial loss (5). Risk bodily harm or financial/social ruin (10). Risk life &amp;
+                limb (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Impulsiveness</name>
+            <category>Compulsive Behaviors</category>
+            <description>You just can&#8217;t help yourself: you always jump into things without thinking. To follow a
+                whim, you&#8217;ll: Risk expulsion or embarrassment (5). Risk bodily harm, social or financial ruin
+                (10). Risk life &amp; limb (15).
+            </description>
+        </complication>
+        <complication>
+            <name>Intolerance</name>
+            <category>Compulsive Behaviors</category>
+            <description>You&#8217;re bigoted and intolerant of those who are different from you. When you encounter
+                them, you are: Civil but distant (5). Rude and verbally abusive (10). Violently abusive (15). Abusive
+                even at risk of life and limb (20).
+            </description>
+        </complication>
+        <complication>
+            <name>Jealousy</name>
+            <category>Compulsive Behaviors</category>
+            <description>You are jealous in the extreme. Towards the one you &#8220;love&#8221;, you are: Obsessed and
+                watchful (5). Confrontative and accusatory (10). Physically violent ((15).
+            </description>
+        </complication>
+        <complication>
+            <name>Kleptomania</name>
+            <category>Compulsive Behaviors</category>
+            <description>You steal things continuously. You can&#8217;t help it: you&#8217;ll even: Risk arrest or
+                embarrassment (5). Risk bodily harm or financial/social ruin (10). Risk life &amp; limb (15)
+            </description>
+        </complication>
+        <complication>
+            <name>Lecherous</name>
+            <category>Compulsive Behaviors</category>
+            <description>You can&#8217;t resist grabbing or pawing someone you find attractive, or at least making lewd
+                comments. You&#8217;ll even: Risk expulsion, embarrassment, or financial loss (5). Risk bodily harm or
+                financial or social ruin (10). Risk life &amp; limb (15)
+            </description>
+        </complication>
+    </complications>
+    <talents system="modified fuzion">
+        <talent>
+            <name>Acute Senses</name>
+            <description>One of your five senses (sight, sound, smell, touch, taste) is extremely acute. If the sense is
+                touch, you can read print with your fingertips, feel tumblers moving in a lock, and determine subtle
+                differences in materials by feel. If the sense is smell, you can instantly detect people or substances
+                by scent alone and can track them like a bloodhound. If the sense is sight, you automatically gain a +1
+                bonus in all sight related Awareness checks, and treat all ranged attack modifiers as being 2 points
+                less than normal. If the sense is taste, you can perceive subtle additions to food and detect harmful
+                substances with the barest taste.
+            </description>
+        </talent>
+        <talent>
+            <name>Ambidexterity</name>
+            <description>You can use tools and weapons with either hand at no penalty (normally -3 for using
+                off-hand).
+            </description>
+        </talent>
+        <talent>
+            <name>Animal Empathy</name>
+            <description>Animals like you; they will never harm or attack you unless severely provoked. You always seem
+                to attract whatever animals are common to the area, and they will immediately gravitate to your side,
+                although they may not necessarily do what you ask them to.
+            </description>
+        </talent>
+        <talent>
+            <name>Beatiful / Handsome</name>
+            <description>You are extremely good looking; people will automatically stop and stare at you when you pass,
+                and you are generally surrounded by admirers. In addition, you automatically have a +1 bonus to your
+                Persuasion, Performance, and Wardrobe/Style skills for each level taken.
+            </description>
+        </talent>
+        <talent>
+            <name>Blind Reaction</name>
+            <description>You can counterattack (in hand-to-hand only) with no negative modifiers for darkness or being
+                obscured (-4), even if you can't see or hear your opponent.
+            </description>
+        </talent>
+        <talent>
+            <name>Charismatic Leadership</name>
+            <description>This Talent allows the user to sway crowds equal to his level times 200. This ability (added to
+                your Pre stat) allows the character to control, incite and charm large number of people through his or
+                her performance skills. When under the character's control, this group can easily be persuaded to act on
+                his suggestions; for example, with a high Charismatic Leadership, a character could convince a concert
+                crowd to riot in the streets or attack a heavily fortified police line. Charismatic Leadership will only
+                work with groups of ten or more people as it is primarily a mob leadership ability. The higher your
+                Charismatic Leadership, the larger a crowd you can control and the more direct and complex the
+                instructions you can get them to follow. For example, a Level +3 Leadership could incite a nightclub
+                crowd to get rowdy. A Level +5 or +6 could provoke a concert crowd of thousands to trash a neighborhood,
+                if the area wasn&#8217;t too far from the hall. At Level +9, and higher, you have the same sort of
+                mesmeric ability as an Adolph Hitler&#8212;you can raise armies, start movements, and destroy nations.
+            </description>
+        </talent>
+        <talent>
+            <name>Combat Sense</name>
+            <description>Combat Sense allows the user to perceive danger, notice traps, and have an almost unearthly
+                ability to avoid harm. Your Combat Sense gives you a bonus on both your Awareness skill and your
+                Initiative equal to your level in the Combat Sense skill. Your reflexes are keyed for danger; you
+                automatically react faster to danger than anyone else; for every level taken (up to 5) you may add +1 to
+                your Initiative rolls (in combat only). This ability is based on constant training and professionalism.
+            </description>
+        </talent>
+        <talent>
+            <name>Common Sense</name>
+            <description>You always look before you leap; the Ref must give you warning whenever you&#8217;re about to
+                do something particularly foolish, even if there are no perceptible clues present. He doesn&#8217;t have
+                to specify the danger, just that "this might not be a smart idea..."
+            </description>
+        </talent>
+        <talent>
+            <name>Direction Sense</name>
+            <description>You are never lost, always know where North is and can orient yourself easily without any
+                external cues.
+            </description>
+        </talent>
+        <talent>
+            <name>Double Jointed</name>
+            <description>You can bend your limbs and joints in impossible ways. You can fit into any space equal to half
+                your height and width and it is impossible to tie you up or entangle you with a single rope; you can
+                only be restrained using restraints like cuffs, shackles, or nets.
+            </description>
+        </talent>
+        <talent>
+            <name>Eidetic Memory</name>
+            <description>You never forget anything you have read, seen, heard, smelled, or touched.</description>
+        </talent>
+        <talent>
+            <name>High Pain Threshold</name>
+            <description>You are especially resistant to pain and shock. When wounded, you will reduce the amount of
+                STUN taken by 2 points each time and the effects of impairing wounds (when used) by -2.
+            </description>
+        </talent>
+        <talent>
+            <name>Immunity</name>
+            <description>You are immune to the effects of one specific poison or disease group (must specify).
+            </description>
+        </talent>
+        <talent>
+            <name>Intuition</name>
+            <description>You have an uncanny feel for hunches; the Ref will give you a chance to make a Awareness roll
+                whenever he thinks you might get a hunch, even if there are no perceptible clues present.
+            </description>
+        </talent>
+        <talent>
+            <name>Lightning Calculator</name>
+            <description>You can automatically do complex mathematical operations in your head without using any aids.
+            </description>
+        </talent>
+        <talent>
+            <name>Light sleeper</name>
+            <description>You wake instantly from even the lightest touch or smallest sound (no Awareness check
+                required).
+            </description>
+        </talent>
+        <talent>
+            <name>Longevity</name>
+            <description>You are extremely long lived, but do not show any appreciable signs of aging. No matter how old
+                you are, you always look and feel as a person half your age.
+            </description>
+        </talent>
+        <talent>
+            <name>Night Vision</name>
+            <description>You can see in all but absolute darkness.</description>
+        </talent>
+        <talent>
+            <name>Perfect Pitch</name>
+            <description>You always know if something&#8217;s in tune, and automatically gain a +3 bonus in any
+                musically related task (singing, playing instruments, etc).
+            </description>
+        </talent>
+        <talent>
+            <name>Rapid Healing</name>
+            <description>You heal extremely fast, recovering an extra 3 Hits per day in addition to your normal healing
+                rate.
+            </description>
+        </talent>
+        <talent>
+            <name>Schtick</name>
+            <description>A schtick is a special habit or personal affectation that has little or no actual effect on
+                skills or combat abilities. Examples might be: always having a wind wafting your hair or cape
+                dramatically, always having dramatic lighting striking your face, being able to toss your hat on a hook
+                when you walk in; always having a cigar hidden somewhere on your person, etc. Schticks must be okayed by
+                the Ref and should never have an important combat or skill application&#8212;always shooting the gun out
+                of the bad guy&#8217;s hand would be a very dangerous schtick to allow.
+            </description>
+        </talent>
+        <talent>
+            <name>Simulate Death</name>
+            <description>You can lower your heart rate and breathing to such a low level that it is a Very Hard
+                Difficulty to tell whether you are dead or not.
+            </description>
+        </talent>
+        <talent>
+            <name>Speed Reeder</name>
+            <description>You can read one page of any normal text that you are familiar with in three seconds (you can
+                read a 200 page book in 10 minutes).
+            </description>
+        </talent>
+        <talent>
+            <name>Time Sense</name>
+            <description>You always know what time it is, always know how much time has elapsed between the present and
+                the last time you checked.
+            </description>
+        </talent>
+    </talents>
+    <perks system="modified fuzion">
+        <perk>
+            <name>Membership</name>
+            <description>You can call upon the resources of an organization, person, government, Altcult
+                or group&#8212;but you also have responsibilities. The level of Membership represents your character&#8217;s
+                status in the organization, not the influence of the group (that&#8217;s what the multipliers above are
+                for). For example: A Membership of 1 at in the FBI would make you a janitor, but at 10 you&#8217;re the
+                Director&#8217;s right-hand man. A version of this is Authority, in which the character is an agent of
+                the law and has the power to arrest, detain and use deadly force.
+            </description>
+            <cost>1</cost>
+        </perk>
+        <perk>
+            <name>Contact</name>
+            <description>You know someone who can (and generally will) help you through money, power or
+                sheer skill, and this help is usually &#8220;off the record.&#8221; A mercenary who&#8217;ll
+                occasionally back you up in a fight costs 3, a local Yakuza Boss costs 6, the head of NC SWAT costs 9.
+                Remember that the level of the contact is based on several factors: a student&#8217;s not much, but a
+                student who&#8217;s willing to die for you&#8230;</description>
+            <cost>1</cost>
+        </perk>
+        <perk>
+            <name>Favor</name>
+            <description>A one shot Contact; you can make use of this contact only once, but they MUST
+                do what you ask (as long as its appropriate). Note that it&#8217;s often useful to have favors from a
+                lot of people in different areas rather than one contact who does everything.
+            </description>
+            <cost>0.5</cost>
+        </perk>
+        <perk>
+            <name>Renown</name>
+            <description>Your reputation, usually in a favorable light. People go out of their way to
+                curry favor with you, or to at least avoid getting on your bad side. At 3, most local people know you;
+                at 6 you&#8217;re nationally known; at 9 you&#8217;re an international figure.
+            </description>
+            <cost>1</cost>
+        </perk>
+        <perk>
+            <name>Wealth</name>
+            <description>In Cyberpunk, characters are assumed to be lower class (heck, you&#8217;re dirt
+                poor), but wealth boosts your lifestyle. Spending 1 CP places you comfortably in the middle class,
+                capable of buying common things and living in a decent place. Level 2 is upper middle class; you can buy
+                most everyday things and live in a very nice place. At levels 3-4, you are well to do and have more than
+                enough money to support yourself; you need work only occasionally can afford costly hobbies, and have an
+                expensive home. At 6 you&#8217;re rich; you don&#8217;t have to work at all, can afford large purchases
+                like cars or vacations, and live in a very expensive home. At 8, you&#8217;re a millionaire, can live
+                anywhere and buy almost anything you want. The Ref might even let you exceed Wealth 10, making you a
+                billionaire!
+            </description>
+            <cost>5</cost>
+        </perk>
+        <perk>
+            <name>Authority</name>
+            <description>The ability to intimidate or control others through your position as a lawman.
+                This attribute represents the&#180;character&#8217;s ability to call on the forces of Law and Order to
+                get what he wants. Cops can use Authority to question suspects, arrest wrongdoers, and defend innocents.
+                Backed by the power of Authority, a character can arrest, detain, confiscate and enter nearly anywhere,
+                as long as he has the proper arrest or search warrants to back his play. However, Authority is only as
+                good as the guy holding the badge&#8212;if the character appears uncertain of his Authority, there&#8217;s
+                a good chance he&#8217;ll get nailed by the people he&#8217;s trying to confront. The higher your
+                Authority, the more able you are to face down people, particularly high level corporates and government
+                officials. Authority is applied to your Pre stat.
+            </description>
+            <cost>1</cost>
+        </perk>
+        <perk>
+            <name>Credibility</name>
+            <description>This is the ability to be believed: by your viewers, by the police, by important
+                and powerful people. This is critical to getting your side of the story heard and acted upon, as well as
+                convincing people to tell you things, give you information, or get you into where the story is really
+                happening. The higher your Credibility, the more people you can convince, and the easier it is to
+                convince high level authorities of the truth of your information. With a level +3 Credibility, you can
+                convince most people of minor scandals. With a level +5 or +6, you can convince local officials of
+                military atrocities, undercover dealings and other front page stuff. At level +9, you can successfully
+                expose a scandal of Watergate proportions, or convince the President of the EuroMarket Finance Board
+                that aliens are secretly influencing world leaders. Credibility applies to your INT stat.
+            </description>
+            <cost>1</cost>
+        </perk>
+        <perk>
+            <name>Family</name>
+            <description>This is the ability to call upon the resources and help of any of the members of
+                a large, extended family (like an Altcult). This can be in the form of weapons, cash, information, or a
+                small army of relatives. The threat of a family&#8217;s vengeance may in itself stop harm to the
+                character. The higher your Family Perk, the more important you are to the family and the more help you
+                can call upon. With a Family of +2, you might be able to get several members of the Family to help you
+                wreck a town, for example. With a status of +7 or +8, you are able to influence major group decisions
+                and lead troops. At +10, you may be the head of your Family.
+            </description>
+            <cost>1</cost>
+        </perk>
+        <perk>
+            <name>Streetdeal</name>
+            <description>This is the ability to deal with the underground information network. With
+                Streetdeal, a character can uncover rumors and information, locate missing persons or things, put gossip
+                out on the Street, pick up clues and score big deals. The higher your Streetdeal, the more information
+                you can gather about things happening around you, the more informants you have, and the more secretive
+                the information you can dig up. A level +3 Streetdeal can get you contacts for weapons, tools, or minor
+                illegal operations. At level +5, you can penetrate the secrets of all but the most powerful crime
+                families. At level +9, you are the equivalent of a Mafia crimelord yourself, privy to every secret that&#8217;s
+                on the Street. Apply Streetdeal to your Pre stat.
+            </description>
+            <cost>1</cost>
+        </perk>
+    </perks>
+</preferences>
