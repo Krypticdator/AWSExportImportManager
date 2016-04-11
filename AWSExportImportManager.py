@@ -7,12 +7,12 @@ class EndpointManager(object):
         super().__init__()
         self.ep_url = 'https://eo7sjt6hvj.execute-api.us-west-2.amazonaws.com/prod'
 
-    def get_attributes(self, type:str):
+    def get_attributes(self, attribute_type: str):
         API_RESOURCE = '/skillblueprints'
         GET_METHOD = '/get'
         endpoint = self.ep_url + API_RESOURCE + GET_METHOD
         print('retrieving skills...')
-        response = requests.post(url=endpoint, json={'type': type})
+        response = requests.post(url=endpoint, json={'type': attribute_type})
 
         response_json = response.json()
         skills = []
